@@ -1,0 +1,24 @@
+{
+  "name": "app-publisher",
+  "version": "0.0.1",
+  "description": "Publish node app online.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hstarorg/app-publisher.git"
+  },
+  "author": "Jay.M.Hu",
+  "license": "MIT",
+  "dependencies": {
+    "art-template-plus": "^0.1.1",
+    "express": "^4.14.0",
+    "jszip": "^3.1.3",
+    "multer": "^1.2.0",
+    "pm2": "^2.1.6",
+    "shelljs": "^0.7.5"
+  }
+}

@@ -1,0 +1,13 @@
+FROM docker.neg/alpine-node:6.2.0
+
+MAINTAINER jh3r jay.m.hu@newegg.com
+
+COPY dumb-init /usr/local/bin/dumb-init
+
+COPY dist /dist
+
+ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
+
+WORKDIR /dist
+
+CMD ["node", "index.js"]
